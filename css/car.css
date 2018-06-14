@@ -1,0 +1,80 @@
+.car .shoppingCar{
+	margin-left:50%; 
+	font-size:18px;
+}
+.car .toptitle{
+
+}
+.car .liner{
+	border-bottom:1px solid;
+	width:47%;
+	margin-top:13px;
+	position:absolute;
+	display:table-cell;
+}
+.car .linef{
+	border-bottom:1px solid;
+	width:44.5%;
+	margin-top:13px;
+	float:right;
+}
+.car .carhead{
+	height:50px;
+	background:#979595;
+	margin-top:20px;
+}
+.car .tablelist{
+	height: 190px;
+}
+.car .names{
+	margin:8%;
+	line-height:46px;
+}
+.car .checkbox{
+	margin:75px 50px 0 50px;
+}
+.car .proname{
+	margin-left:270px;
+	margin-top:-70px;
+	color:red;
+}
+.car .imgback{
+	width: 140px;
+	margin:20px 0;
+	position: absolute;
+}
+.car .include{
+	margin-left:270px;
+	margin-top:50px;
+}
+.car .money{
+	margin:-100px  0 0 580px;
+}
+.car .counts{
+	margin:-20px  0 0 940px;
+}
+.car .inputCount{
+	width: 30px;
+	text-align: center;
+}
+.car .allMoney{
+	margin:-20px 0 0 1360px;
+}
+.car .trash{
+	width:30px;
+	margin: -17px 0 0 1726px;
+	position: absolute;
+}
+.car .payForIt{
+	background:#fa4141ee;
+	color:white;
+	border:salmon;
+	width:120px;
+	height:40px;
+	font-size:18px;
+}
+.cllcheck{
+	color: orange ;
+	margin:-30px 0 -30px 110px;
+	position:absolute;
+}

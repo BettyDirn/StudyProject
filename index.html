@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cart</title>
+		<link rel="stylesheet" type="text/css" href="./css/car.css">
+
+	</head>
+	<body>
+		<div class="car" id="app">
+			<div class="toptitle">
+				<div class="liner"></div>
+				<span class="shoppingCar">购物车</span>
+				<div class="linef"></div>
+			</div>
+			<div class="carhead" id="headTitle">
+				<span v-for="(title,index) in titles" class="names">
+					{{title.text}}
+				</span>
+			</div>
+			<div id="starlist">
+				<div v-for="(item,index) in productlist" :key="index" class="tablelist">
+					<input class="checkbox" type="checkbox" v-model:checked="item.checks"  @click="checkClick(item)">
+					<img :src="item.imgsrc" :alt="item.name" class="imgback">
+					<div class="proname">{{item.name}}</div>
+					<div class="include">
+						<dl>
+							<dt>赠品：</dt>
+							<dd v-for="(pro,index) in item.freepro" :key="index" >{{pro}}</dd>
+						</dl>
+					</div>
+					<div class="money">{{item.money | formatMoney}}</div>
+					<div class="counts">
+						<button class="" @click="cutCounts(item)">-</button>
+						<input  class="inputCount" v-model:value="item.counts">
+						<button class="" @click="addCounts(item)">+</button>
+					</div>
+					<div class="allMoney">{{item.money*item.counts | formatMoney}}</div>
+					<img src="./img/trash.png" class="trash" @click="deleteItem">
+				</div>
+				<div>
+					<input class="checkbox" type="checkbox" v-model:checked="checkall" @click="chooseAll">
+					<div v-if="checkall==true"  class="cllcheck">全选</div>
+					<div v-if="checkall==false" class="cllcheck">取消全选</div>
+					<span style="margin-left:1400px;margin-right: 20px;">总价：</span>
+					<span style="margin-right: 70px;" >{{allCounts|formatMoney}}</span>
+					<button class="payForIt">结账</button>
+				</div>
+			</div>	
+		</div>
+		<script type="text/javascript" src="./js/vue.js"></script>
+		<script type="text/javascript" src="./js/vue-resource.js"></script>  
+		<script type="text/javascript" src="./js/car.js"></script>
+	</body>
+</html>

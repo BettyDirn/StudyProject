@@ -1,0 +1,19 @@
+{
+    "callback":true,
+	"carlist":[
+		{
+			"name":"黄鹤楼香烟",
+			"imgsrc":"../img/xy.jpg",
+			"freepro":["打火机","购物袋"],
+			"money":"19",
+			"counts":0
+		},
+		{
+			"name":"口红",
+			"imgsrc":"../img/xy.jpg",
+			"freepro":["打火机","购物袋"],
+			"money":"19",
+			"counts":0
+		}
+	]
+}
