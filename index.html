@@ -42,8 +42,8 @@
 					<input class="checkbox" type="checkbox" v-model:checked="checkall" @click="chooseAll">
 					<div v-if="checkall==true"  class="cllcheck">全选</div>
 					<div v-if="checkall==false" class="cllcheck">取消全选</div>
-					<span style="margin-left:1400px;margin-right: 20px;">总价：</span>
-					<span style="margin-right: 70px;" >{{allCounts|formatMoney}}</span>
+					<span style="margin-left:60%;margin-right: 2%;">总价：</span>
+					<span style="margin-right: 2%;" >{{allCounts|formatMoney}}</span>
 					<button class="payForIt">结账</button>
 				</div>
 			</div>	

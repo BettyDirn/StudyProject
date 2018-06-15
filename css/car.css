@@ -48,21 +48,21 @@
 	margin-top:50px;
 }
 .car .money{
-	margin:-100px  0 0 580px;
+	margin:-100px  0 0 31%;
 }
 .car .counts{
-	margin:-20px  0 0 940px;
+	margin:-20px  0 0 49%;
 }
 .car .inputCount{
 	width: 30px;
 	text-align: center;
 }
 .car .allMoney{
-	margin:-20px 0 0 1360px;
+	margin:-20px 0 0 72%;
 }
 .car .trash{
 	width:30px;
-	margin: -17px 0 0 1726px;
+	margin: -17px 0 0 90%;
 	position: absolute;
 }
 .car .payForIt{
