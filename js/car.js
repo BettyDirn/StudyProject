@@ -2,7 +2,7 @@ new Vue({
 	el:'#headTitle',
 	data:{
 		titles:[
-			{text:'商品信息'},
+			{text:'信息'},
 			{text:'商品金额'},
 			{text:'商品数量'},
 			{text:'总金额'},
@@ -34,7 +34,7 @@ new Vue({
 			this.$http.get("car.json").then(res=>{
 				if(res.body.callback){
 					_t.productlist=res.body.carlist;
-				}	
+				}
 			});
 		},
 		checkClick:function(item){
@@ -45,7 +45,7 @@ new Vue({
 				item.checks = !item.checks;
 			}
 			this.totalMoney();
-			
+
 		},
 		cutCounts:function(item){
 			if(item.counts>0){
@@ -57,7 +57,7 @@ new Vue({
 				item.counts++;
 				this.totalMoney();
 		},
-		chooseAll:function(){		
+		chooseAll:function(){
 				let _t = this;
 				this.checkall = !this.checkall;
 				if(this.checkall){
